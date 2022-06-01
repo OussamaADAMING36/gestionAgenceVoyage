@@ -21,7 +21,9 @@ public class Voyageur implements Serializable {
 	public int age;
 	@OneToMany(mappedBy = "voyageur")
 	private List<Reservation> reservations = new ArrayList<>();
-	private Date dateNaiss;
+
+	private Date dateNaissance;
+
 
 	public Voyageur() {
 	}
