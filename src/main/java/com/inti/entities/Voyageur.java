@@ -2,6 +2,7 @@ package com.inti.entities;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -20,6 +21,7 @@ public class Voyageur implements Serializable {
 	public int age;
 	@OneToMany(mappedBy = "voyageur")
 	private List<Reservation> reservations = new ArrayList<>();
+	private Date dateNaiss;
 
 	public Voyageur() {
 	}
